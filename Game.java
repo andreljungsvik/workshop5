@@ -1,5 +1,5 @@
-import java.util.Random;
 import java.io.*;
+import java.util.*;
 
 public class Game {
 	public static void main(String[] args) {
@@ -24,7 +24,7 @@ public class Game {
 					}
 				} while (answer.equalsIgnoreCase("help"));
 				if (answer.equalsIgnoreCase(continent)) {
-					switch(r.nextInt() % 3){
+					switch(r.nextInt(3)){
 					 case 0:
 						   System.out.println("Well done!");
 						   break;
